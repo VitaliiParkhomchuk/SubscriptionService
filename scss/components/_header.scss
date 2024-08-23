@@ -1,0 +1,446 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+
+    &__container {
+        padding: 2.5px 15px;
+
+        @media (max-width: $tabletSize--Big) {
+            padding: 11px 24px;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+    }
+
+    &__logo {}
+
+    &__nav {}
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $colorBlack23;
+
+        &__img {
+            @media (max-width: $tabletSize--Big) {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        &__title {
+            font-family: "Manrope";
+            font-weight: 600;
+            line-height: 130%;
+        }
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr auto;
+
+        @media (max-width: $tabletSize--Big) {
+            position: fixed;
+            top: 78px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            width: calc(100% - 48px);
+            min-height: calc(100vh - 54px - 24px);
+        }
+
+        &__menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 46px;
+
+            @media (max-width: $tabletSize--Big) {
+                flex-direction: column;
+                gap: 24px;
+                position: relative;
+                padding: 28px 36px 12px 36px;
+                background-color: white;
+                border-radius: 12px;
+            }
+        }
+
+        &__menu-item {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            a {
+                color: $colorBlack51;
+            }
+
+            @media (max-width: $tabletSize--Big) {
+                align-self: center;
+                width: 100%;
+                font-size: 17px;
+
+                a {
+                    color: $colorBlack7;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 67%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                background-color: $colorBlue;
+                height: 1px;
+                transition: width 0.3s ease, left 0.3s ease;
+            }
+
+            &:first-of-type {
+                &::after {
+                    left: 43%;
+                }
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+
+                &:first-of-type {
+                    &::after {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            @media (max-width: $tabletSize--Big) {
+                flex-direction: column;
+                justify-content: end;
+                gap: 0px;
+            }
+        }
+    }
+
+    .subscriptions {
+        position: relative;
+
+        @media (max-width: $tabletSize--Big) {
+            position: absolute;
+            bottom: calc(-100% - 28px - 16px);
+            width: 100%;
+        }
+
+        &:hover .subscriptions__button-arrow {
+            transform: rotate(90deg);
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            background-color: white;
+            font-size: 16px;
+
+            @media (max-width: $tabletSize--Big) {
+                display: none;
+            }
+        }
+
+        &__button-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        &__menu {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: -23px;
+            width: 205px;
+            padding: 27px 23px 24px 23px;
+
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            background-color: white;
+            border-radius: 16px;
+
+            @media (max-width:$tabletSize--Big) {
+                position: static;
+                display: flex;
+                gap: 24px;
+                opacity: 1;
+                width: 100%;
+                padding: 28px 36px 12px 36px;
+                border-radius: 12px;
+            }
+
+            &--active {
+                display: flex;
+            }
+        }
+
+        &__menu-item {
+            font-size: 17px;
+            line-height: 150%;
+
+            a {
+                display: block;
+                color: $colorBlack23;
+
+                &:hover {
+                    color: $colorBlue;
+                }
+            }
+
+            @media (max-width:$tabletSize--Big) {
+                a {
+                    color: $colorBlack7;
+                }
+            }
+        }
+    }
+
+    .social-media-buttons {
+        display: flex;
+        gap: 14px;
+
+        &__item {}
+    }
+
+    .language {
+        display: flex;
+        align-items: center;
+        position: relative;
+        align-self: stretch;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 67%;
+            left: 33%;
+            transform: translateX(-50%);
+            width: 0;
+            background-color: $colorBlue;
+            height: 1px;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        &:hover {
+            &::after {
+                width: 61%;
+            }
+        }
+
+        &:hover .language__selected-language-arrow {
+            transform: rotate(90deg);
+        }
+
+        &__selected-language {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            background-color: white;
+            font-size: 16px;
+        }
+
+        &__selected-language-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        &__list {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: -23px;
+            width: 114px;
+            padding: 27px 23px 24px 23px;
+
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            background-color: white;
+            border-radius: 16px;
+
+            &--active {
+                display: flex;
+            }
+        }
+
+        &__list-item {
+            button {
+                background-color: white;
+                font-size: 17px;
+                line-height: 150%;
+
+                &:hover {
+                    color: $colorBlue;
+                }
+            }
+        }
+    }
+
+    .log-in {
+        padding: 9px 43px;
+        background-color: $colorBlue;
+        border-radius: 12px;
+        border: 1px solid $colorBlue;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 130%;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $colorBlack23;
+        }
+    }
+
+    &__burger-button {
+        display: none;
+        align-self: center;
+        justify-self: end;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        transition: background-color 0.3s ease, border-radius 0.3s ease;
+
+        @media (max-width: 991.8px) {
+            display: flex;
+        }
+
+        span {
+            display: block;
+            position: relative;
+            width: 24px;
+            height: 2px;
+            background-color: rgb(7, 0, 51);
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: rgb(7, 0, 51);
+                animation: burgerButtonBottom 0.5s ease forwards;
+
+                @keyframes burgerButtonBottom {
+                    0% {
+                        bottom: -50%;
+                        transform: translateY(50%) rotate(45deg);
+                        background-color: white;
+                    }
+
+                    50% {
+                        bottom: -50%;
+                        transform: translateY(-50%) rotate(0deg);
+                        background-color: rgb(7, 0, 51);
+                    }
+
+                    100% {
+                        transform: translateY(0%) rotate(0deg);
+                        background-color: rgb(7, 0, 51);
+                    }
+                }
+            }
+
+            &::after {
+                top: -8px;
+                animation: burgerButtonTop 0.5s ease forwards;
+
+                @keyframes burgerButtonTop {
+                    0% {
+                        top: -50%;
+                        transform: translateY(-50%) rotate(-45deg);
+                        background-color: white;
+                    }
+
+                    50% {
+                        top: -50%;
+                        transform: translateY(50%) rotate(0deg);
+                        background-color: rgb(7, 0, 51);
+                    }
+
+                    100% {
+                        transform: translateY(0%) rotate(0deg);
+                        background-color: rgb(7, 0, 51);
+                    }
+                }
+            }
+        }
+
+        &--active {
+            border-radius: 50%;
+            background-color: $colorBlue;
+
+            span {
+                height: 0;
+
+                &::before {
+                    animation: burgerButtonBottomActive 0.5s ease forwards;
+
+                    @keyframes burgerButtonBottomActive {
+                        0% {}
+
+                        50% {
+                            bottom: -50%;
+                            transform: translateY(50%);
+                            background-color: white;
+                        }
+
+                        100% {
+                            bottom: -50%;
+                            transform: translateY(50%) rotate(45deg);
+                            background-color: white;
+                        }
+                    }
+                }
+
+                &::after {
+                    animation: burgerButtonTopActive 0.5s ease forwards;
+
+                    @keyframes burgerButtonTopActive {
+                        0% {}
+
+                        50% {
+                            top: -50%;
+                            transform: translateY(-50%);
+                            background-color: white;
+                        }
+
+                        100% {
+                            top: -50%;
+                            transform: translateY(-50%) rotate(-45deg);
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

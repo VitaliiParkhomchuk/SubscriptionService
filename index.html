@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <a href="index.html" class="header__logo logo">
+                        <img class="logo__img" width="55px" height="55px" src="/img/icons/logo.svg" alt="logo-icon">
+                        <div class="logo__title">DiscountsOnServices</div>
+                    </a>
+                    <nav class="header__nav nav">
+                        <ul class="nav__menu">
+                            <li class="nav__menu-item subscriptions">
+                                <button class="subscriptions__button">
+                                    <h3>Subscriptions</h3><img class="subscriptions__button-arrow" src="/img/icons/arrow-slim.svg" alt="arrow-icon">
+                                </button>
+                                <ul class="subscriptions__menu">
+                                    <li class="subscriptions__menu-item"><a href="">Netflix</a></li>
+                                    <li class="subscriptions__menu-item"><a href="">YouTube Premium</a></li>
+                                    <li class="subscriptions__menu-item"><a href="">Spotify</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__menu-item"><a href="">FAQ</a></li>
+                            <li class="nav__menu-item"><a href="">Support</a></li>
+                            <li class="nav__menu-item"><a href="">About</a></li>
+                        </ul>
+                        <div class="nav__buttons">
+                            <div class="social-media-buttons">
+                                <a href="" class="social-media-buttons__item">
+                                    <img width="20px" height="20px" src="/img/icons/whatsapp.svg" alt="whatsapp-icon">
+                                </a>
+                                <a href="" class="social-media-buttons__item">
+                                    <img width="20px" height="20px" src="/img/icons/telegram.svg" alt="telegram-icon">
+                                </a>
+                            </div>
+                            <div class="language">
+                                <button class="language__selected-language">
+                                    <h3>EN</h3><img class="language__selected-language-arrow" src="/img/icons/arrow-slim.svg" alt="arrow-icon">
+                                </button>
+                                <ul class="language__list">
+                                    <li class="language__list-item"><button>English</button></li>
+                                    <li class="language__list-item"><button>Ukraine</button></li>
+                                    <li class="language__list-item"><button>Russian</button></li>
+                                </ul>
+                            </div>
+                            <button class="log-in">Log in</button>
+                        </div>
+                    </nav>
+                    <button class="header__burger-button" onclick="openBurgerMenu(this)">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+
+        </main>
+        <footer class="footer">footer</footer>
+    </div>
+    <script src="/js/headerMenu.js"></script>
+    <script src="/js/burgerMenu.js"></script>
+</body>
+
+</html>
