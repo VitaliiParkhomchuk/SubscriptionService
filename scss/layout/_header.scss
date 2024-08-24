@@ -6,7 +6,7 @@
     &__container {
         padding: 2.5px 15px;
 
-        @media (max-width: $tabletSize--Big) {
+        @media (max-width: $tabletSize_Big) {
             padding: 11px 24px;
         }
     }
@@ -29,7 +29,7 @@
         color: $colorBlack23;
 
         &__img {
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 width: 32px;
                 height: 32px;
             }
@@ -50,7 +50,7 @@
         display: grid;
         grid-template-columns: 1fr auto;
 
-        @media (max-width: $tabletSize--Big) {
+        @media (max-width: $tabletSize_Big) {
             position: fixed;
             margin-top: 54px;
             padding: 24px 24px 0 24px;
@@ -73,7 +73,7 @@
             }
         }
 
-        &--burger-menu-active {
+        &_burger-menu-active {
             transform: translateX(0%);
         }
 
@@ -87,7 +87,7 @@
                 gap: 30px;
             }
 
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 flex-direction: column;
                 gap: 24px;
                 position: relative;
@@ -105,18 +105,18 @@
             align-items: center;
             position: relative;
 
-            &--burger-menu-item {
+            &_burger-menu-item {
                 display: none;
 
-                @media (max-width: $tabletSize--Big) {
+                @media (max-width: $tabletSize_Big) {
                     display: flex;
                 }
             }
 
-            &--burger-item-icon {
+            &_burger-item-icon {
                 display: none;
 
-                @media (max-width: $tabletSize--Big) {
+                @media (max-width: $tabletSize_Big) {
                     display: block;
                 }
             }
@@ -125,7 +125,7 @@
                 color: $colorBlack51;
             }
 
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 align-self: center;
                 width: 100%;
                 font-size: 17px;
@@ -179,7 +179,7 @@
                 gap: 25px;
             }
 
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 gap: 0px;
                 align-items: normal;
                 align-self: flex-end;
@@ -215,7 +215,7 @@
     .subscriptions {
         position: relative;
 
-        @media (max-width: $tabletSize--Big) {
+        @media (max-width: $tabletSize_Big) {
             position: absolute;
             bottom: calc(-100% - 16px);
             width: 100%;
@@ -234,7 +234,7 @@
             background-color: white;
             font-size: 16px;
 
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 display: none;
             }
         }
@@ -259,7 +259,9 @@
             background-color: white;
             border-radius: 16px;
 
-            @media (max-width:$tabletSize--Big) {
+            box-shadow: 0 20px 48px #b1b1b163;
+
+            @media (max-width:$tabletSize_Big) {
                 position: static;
                 display: flex;
                 gap: 24px;
@@ -271,7 +273,7 @@
                 box-shadow: 0 12px 28px rgba(177, 177, 177, 0.2);
             }
 
-            &--active {
+            &_active {
                 display: flex;
             }
         }
@@ -289,7 +291,7 @@
                 }
             }
 
-            @media (max-width:$tabletSize--Big) {
+            @media (max-width:$tabletSize_Big) {
                 a {
                     color: $colorBlack7;
                 }
@@ -301,13 +303,13 @@
         display: flex;
         gap: 14px;
 
-        @media (max-width: $tabletSize--Big) {
+        @media (max-width: $tabletSize_Big) {
             order: 2;
             gap: 16px;
         }
 
         &__item {
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 width: 32px;
                 height: 32px;
 
@@ -349,7 +351,7 @@
             }
         }
 
-        @media (max-width: $tabletSize--Big) {
+        @media (max-width: $tabletSize_Big) {
             order: 3;
 
         }
@@ -362,7 +364,7 @@
             font-size: 16px;
             color: $colorBlack51;
 
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 font-size: 17px;
             }
         }
@@ -387,13 +389,16 @@
             background-color: white;
             border-radius: 16px;
 
-            &--active {
+            box-shadow: 0 20px 48px #b1b1b163;
+
+            &_active {
                 display: flex;
             }
 
-            @media (max-width: $tabletSize--Big) {
+            @media (max-width: $tabletSize_Big) {
                 top: -180px;
                 left: -75px;
+                box-shadow: 0 -6px 28px rgba(177, 177, 177, 0.2);
             }
         }
 
@@ -428,7 +433,7 @@
             color: $colorBlack23;
         }
 
-        @media (max-width: $tabletSize--Big) {
+        @media (max-width: $tabletSize_Big) {
             order: 1;
             flex-basis: 100%;
             width: 100%;
@@ -441,7 +446,7 @@
     .sign-up {
         display: none;
 
-        @media (max-width: $tabletSize--Big) {
+        @media (max-width: $tabletSize_Big) {
             display: block;
             order: 1;
             flex-basis: 100%;
@@ -545,7 +550,7 @@
             }
         }
 
-        &--active {
+        &_active {
             border-radius: 50%;
             background-color: $colorBlue;
 

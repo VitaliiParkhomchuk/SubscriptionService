@@ -1,5 +1,8 @@
-@import "./components/fonts";
-@import "./components/variables";
-@import "./components/nullstyle";
-@import "./components/basic";
-@import "./components/header";
+@import "./base/variables";
+@import "./base/fonts";
+@import "./base/nullstyle";
+@import "./base/basic";
+@import "./components/components.scss";
+@import "./layout/header";
+@import "./index/startup";
+@import "./index/subscriptions";

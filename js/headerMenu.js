@@ -64,10 +64,10 @@
 
         const navMenuButton = document.querySelector('.subscriptions');
         const navDropdownMenu = navMenuButton.querySelector('.subscriptions__menu');
-        setupDropdown(navMenuButton, navDropdownMenu, 'subscriptions__menu--active');
+        setupDropdown(navMenuButton, navDropdownMenu, 'subscriptions__menu_active');
 
         const languageMenuButton = document.querySelector('.language');
         const languageDropdownMenu = languageMenuButton.querySelector('.language__list');
-        setupDropdown(languageMenuButton, languageDropdownMenu, 'language__list--active');
+        setupDropdown(languageMenuButton, languageDropdownMenu, 'language__list_active');
     });
 })();
