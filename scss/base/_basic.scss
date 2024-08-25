@@ -28,6 +28,10 @@ body {
     padding: 0 15px;
 
     @media (max-width: $tabletSize_Big) {
+        padding: 0 32px;
+    }
+
+    @media (max-width: $mobileSize) {
         padding: 0 24px;
     }
 }
