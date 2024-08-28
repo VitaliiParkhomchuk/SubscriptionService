@@ -2,132 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <div class="header__body">
-                    <a href="index.html" class="header__logo logo">
-                        <img class="logo__img" width="55px" height="55px" src="/img/icons/logo.svg" alt="logo-icon">
-                        <div class="logo__title">DiscountsOnServices</div>
-                    </a>
-                    <nav class="header__nav nav">
-                        <ul class="nav__menu">
-                            <li class="nav__menu-item subscriptions">
-                                <button class="subscriptions__button">
-                                    <h3>Subscriptions</h3><img class="subscriptions__button-arrow" src="/img/icons/arrow-slim.svg" alt="arrow-icon">
-                                </button>
-                                <ul class="subscriptions__menu">
-                                    <li class="subscriptions__menu-item"><a href="">Netflix</a></li>
-                                    <li class="subscriptions__menu-item"><a href="">YouTube Premium</a></li>
-                                    <li class="subscriptions__menu-item"><a href="">Spotify</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav__menu-item nav__menu-item_burger-menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/home.svg" alt=""><a href="">Home</a></li>
-                            <li class="nav__menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/FAQ.svg" alt=""><a href="">FAQ</a></li>
-                            <li class="nav__menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/support.svg" alt=""><a href="">Support</a></li>
-                            <li class="nav__menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/about.svg" alt=""><a href="">About</a></li>
-                        </ul>
-                        <div class="nav__buttons">
-                            <div class="social-media-buttons">
-                                <a href="" class="social-media-buttons__item">
-                                    <img width="20px" height="20px" src="/img/icons/whatsapp.svg" alt="whatsapp-icon">
-                                </a>
-                                <a href="" class="social-media-buttons__item">
-                                    <img width="20px" height="20px" src="/img/icons/telegram.svg" alt="telegram-icon">
-                                </a>
-                            </div>
-                            <div class="language">
-                                <button class="language__selected-language">
-                                    <h3>EN</h3><img class="language__selected-language-arrow" src="/img/icons/arrow-slim.svg" alt="arrow-icon">
-                                </button>
-                                <ul class="language__list">
-                                    <li class="language__list-item"><button>English</button></li>
-                                    <li class="language__list-item"><button>Ukraine</button></li>
-                                    <li class="language__list-item"><button>Russian</button></li>
-                                </ul>
-                            </div>
-                            <button class="log-in">Log in</button>
-                            <button class="sign-up">Sign up</button>
-                        </div>
-                    </nav>
-                    <button class="header__burger-button" onclick="openBurgerMenu(this)">
-                        <span></span>
-                    </button>
-                </div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__body">
+          <a href="index.html" class="header__logo logo">
+            <img class="logo__img" width="55px" height="55px" src="/img/icons/logo.svg" alt="logo-icon">
+            <div class="logo__title">DiscountsOnServices</div>
+          </a>
+          <nav class="header__nav nav">
+            <ul class="nav__menu">
+              <li class="nav__menu-item subscriptions">
+                <button class="subscriptions__button">
+                  <h3>Subscriptions</h3><img class="subscriptions__button-arrow" src="/img/icons/arrow-slim.svg" alt="arrow-icon">
+                </button>
+                <ul class="subscriptions__menu">
+                  <li class="subscriptions__menu-item"><a href="">Netflix</a></li>
+                  <li class="subscriptions__menu-item"><a href="">YouTube Premium</a></li>
+                  <li class="subscriptions__menu-item"><a href="">Spotify</a></li>
+                </ul>
+              </li>
+              <li class="nav__menu-item nav__menu-item_burger-menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/home.svg" alt=""><a href="">Home</a></li>
+              <li class="nav__menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/FAQ.svg" alt=""><a href="">FAQ</a></li>
+              <li class="nav__menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/support.svg" alt=""><a href="">Support</a></li>
+              <li class="nav__menu-item"><img class="nav__menu-item_burger-item-icon" src="/img/icons/about.svg" alt=""><a href="">About</a></li>
+            </ul>
+            <div class="nav__buttons">
+              <div class="social-media-buttons">
+                <a href="" class="social-media-buttons__item">
+                  <img width="20px" height="20px" src="/img/icons/whatsapp.svg" alt="whatsapp-icon">
+                </a>
+                <a href="" class="social-media-buttons__item">
+                  <img width="20px" height="20px" src="/img/icons/telegram.svg" alt="telegram-icon">
+                </a>
+              </div>
+              <div class="language">
+                <button class="language__selected-language">
+                  <h3>EN</h3><img class="language__selected-language-arrow" src="/img/icons/arrow-slim.svg" alt="arrow-icon">
+                </button>
+                <ul class="language__list">
+                  <li class="language__list-item"><button>English</button></li>
+                  <li class="language__list-item"><button>Ukraine</button></li>
+                  <li class="language__list-item"><button>Russian</button></li>
+                </ul>
+              </div>
+              <button class="log-in">Log in</button>
+              <button class="sign-up">Sign up</button>
             </div>
-        </header>
-        <main class="main">
-            <div class="main__container">
-                <section class="startup">
-                    <div class="startup__body">
-                        <div class="startup__item content">
-                            <h1 class="content__titile">Start enjoying a benefit of up to 50%</h1>
-                            <p class="content__subtitle">You have always wanted to get the same product at a special price for you, without haggling - and it is yours.</p>
-                            <button class="button button_start-using">Start using</button>
-                        </div>
-                        <div class="startup__item img">
-                            <img class="img" src="/img/startup.jpeg" alt="subscriptions-image">
-                        </div>
-                    </div>
-                </section>
-                <section class="subscriptions">
-                    <h2 class="title">Choose a subscription</h2>
-                    <div class="subscriptions__list">
-                        <div class="subscriptions__item subscription">
-                            <div class="subscription__content">
-                                <h3 class="subscription__title subscription__title_shortcut">Netflix subscription rates</h3>
-                                <h3 class="subscription__title_shortcut">Netflix</h3>
-                                <p class="subscription__description">
-                                    The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.
-                                </p>
-                                <button class="button button_learn-more">Learn more</button>
-                            </div>
-                            <div class="subscription__img subscription__img_netflix">
-                                <img class="subscription__netflix" src="/img/icons/netflix.svg" alt="subscription-image">
-                            </div>
-                        </div>
-                        <div class="subscriptions__item subscription">
-                            <div class="subscription__content">
-                                <h3 class="subscription__title subscription__title_shortcut">Spotify Premium</h3>
-                                <h3 class="subscription__title_shortcut">Spotify</h3>
-                                <p class="subscription__description">
-                                    The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.
-                                </p>
-                                <button class="button button_learn-more">Learn more</button>
-                            </div>
-                            <div class="subscription__img subscription__img_spotify">
-                                <img class="subscription__spotify" src="/img/icons/spotify.svg" alt="subscription-image">
-                                <div class="subscription__spotify_title">Spotify</div>
-                            </div>
-                        </div>
-                        <div class="subscriptions__item subscription">
-                            <div class="subscription__content">
-                                <h3 class="subscription__title subscription__title_shortcut">YouTube Premium</h3>
-                                <h3 class="subscription__title_shortcut">YouTube</h3>
-                                <p class="subscription__description">
-                                    The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.
-                                </p>
-                                <button class="button button_learn-more">Learn more</button>
-                            </div>
-                            <div class="subscription__img subscription__img_youtube">
-                                <img class="subscription__youtube" src="/img/icons/youtube.svg" alt="subscription-image">
-                            </div>
-                        </div>
-                    </div>
-                </section>
+          </nav>
+          <button class="header__burger-button" onclick="openBurgerMenu(this)">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <section class="startup">
+          <div class="startup__body">
+            <div class="startup__item content">
+              <h1 class="content__titile">Start enjoying a benefit of up to 50%</h1>
+              <p class="content__subtitle">You have always wanted to get the same product at a special price for you, without haggling - and it is yours.</p>
+              <button class="button button_start-using">Start using</button>
             </div>
-        </main>
-        <footer class="footer">footer</footer>
-    </div>
-    <script src="/js/headerMenu.js"></script>
-    <script src="/js/burgerMenu.js"></script>
+            <div class="startup__item img">
+              <img class="img" src="/img/startup.jpeg" alt="subscriptions-image">
+            </div>
+          </div>
+        </section>
+        <section class="subscriptions">
+          <h2 class="title">Choose a subscription</h2>
+          <div class="subscriptions__list">
+            <div class="subscriptions__item subscription">
+              <div class="subscription__content">
+                <h3 class="subscription__title subscription__title_shortcut">Netflix subscription rates</h3>
+                <h3 class="subscription__title_shortcut">Netflix</h3>
+                <p class="subscription__description">
+                  The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.
+                </p>
+                <button class="button button_learn-more">Learn more</button>
+              </div>
+              <div class="subscription__img subscription__img_netflix">
+                <img class="subscription__netflix" src="/img/icons/netflix.svg" alt="subscription-image">
+              </div>
+            </div>
+            <div class="subscriptions__item subscription">
+              <div class="subscription__content">
+                <h3 class="subscription__title subscription__title_shortcut">Spotify Premium</h3>
+                <h3 class="subscription__title_shortcut">Spotify</h3>
+                <p class="subscription__description">
+                  The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.
+                </p>
+                <button class="button button_learn-more">Learn more</button>
+              </div>
+              <div class="subscription__img subscription__img_spotify">
+                <img class="subscription__spotify" src="/img/icons/spotify.svg" alt="subscription-image">
+                <div class="subscription__spotify_title">Spotify</div>
+              </div>
+            </div>
+            <div class="subscriptions__item subscription">
+              <div class="subscription__content">
+                <h3 class="subscription__title subscription__title_shortcut">YouTube Premium</h3>
+                <h3 class="subscription__title_shortcut">YouTube</h3>
+                <p class="subscription__description">
+                  The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.
+                </p>
+                <button class="button button_learn-more">Learn more</button>
+              </div>
+              <div class="subscription__img subscription__img_youtube">
+                <img class="subscription__youtube" src="/img/icons/youtube.svg" alt="subscription-image">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="steps">
+          <h2 class="title">How it works?</h2>
+          <div class="steps__list">
+            <div class="steps__step step">
+              <h3 class="step__title">Step 1</h3>
+              <img class="step__img" src="/img/step-1.svg" alt="step-icon">
+              <p class="step__content">Enter your account information</p>
+            </div>
+            <div class="steps__step step">
+              <h3 class="step__title">Step 2</h3>
+              <img class="step__img" src="/img/step-2.svg" alt="step-icon">
+              <p class="step__content">Select the desired subscription and plan</p>
+            </div>
+            <div class="steps__step step">
+              <h3 class="step__title">Step 3</h3>
+              <img class="step__img" src="/img/step-3.svg" alt="step-icon">
+              <p class="step__content">Pay your bill with PayPal</p>
+            </div>
+          </div>
+        </section>
+        <section class="invite">
+          <h2 class="invite__title">Invite friends</h2>
+          <p class="invite__text">Starting today up to 50% for NETFLIX, YOUTUBE, SPOTIFY subscriptions with a secure payment from PAYPAL</p>
+          <div class="inv ite__row row">
+            <h3 class="row__title">Click on the link</h3>
+            <button class="row__link">Discounts On Services</button>
+          </div>
+        </section>
+        <section class="about-us">
+          <h2 class="title">About us</h2>
+          <div class="about-us__body body">
+            <div class="body__content content">
+              <img src="/img/icons/logo.svg" alt="logo-icon" class="content__logo">
+              <p class="content__text">We offer you a subscription to various media services at the best price.</p>
+              <p class="content__text">We have partnered with several companies to help you find the best prices for your media subscriptions and provide you with the best prices for the Premium
+                subscriptions you want.</p>
+              <p class="content__text content__text_bold">It's simple, fast and economical.</p>
+            </div>
+            <img src="/img/about-us.jpeg" alt="logo-image" class="body__img">
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">footer</footer>
+  </div>
+  <script src="/js/headerMenu.js"></script>
+  <script src="/js/burgerMenu.js"></script>
+  <script src="/js/copyLink.js"></script>
 </body>
 
 </html>

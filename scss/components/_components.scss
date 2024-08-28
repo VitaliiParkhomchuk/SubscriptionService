@@ -1,62 +1,62 @@
 .button {
-    padding-top: 0.941em;
-    padding-bottom: 0.941em;
-    border-radius: 0.941em;
-    font-size: 1.0625rem;
-    font-weight: 700;
-    line-height: 130%;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
+  padding-top: 0.941em;
+  padding-bottom: 0.941em;
+  border-radius: 0.941em;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 130%;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  @media (max-width: $tabletSize_Big) {
+    font-size: 0.9375rem;
+  }
+
+  @media (max-width: 524px) {
+    width: 100%;
+  }
+
+  &_start-using {
+    padding-left: 3.38em;
+    padding-right: 3.38em;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: $colorBlack23;
 
     &:hover {
-        background-color: transparent;
+      color: #fff;
     }
+  }
 
-    @media (max-width: $tabletSize_Big) {
-        font-size: 0.9375rem;
+  &_learn-more {
+    padding-left: 1.41em;
+    padding-right: 1.41em;
+    background-color: $colorBlue;
+    border: 1px solid $colorBlue;
+    color: #fff;
+
+    &:hover {
+      color: $colorBlack23;
     }
-
-    @media (max-width: 524px) {
-        width: 100%;
-    }
-
-    &_start-using {
-        padding-left: 3.38em;
-        padding-right: 3.38em;
-        background-color: #fff;
-        border: 1px solid #fff;
-        color: $colorBlack23;
-
-        &:hover {
-            color: #fff;
-        }
-    }
-
-    &_learn-more {
-        padding-left: 1.41em;
-        padding-right: 1.41em;
-        background-color: $colorBlue;
-        border: 1px solid $colorBlue;
-        color: #fff;
-
-        &:hover {
-            color: $colorBlack23;
-        }
-    }
+  }
 }
 
 .title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 140%;
-    color: $colorBlack23;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 140%;
+  color: $colorBlack23;
 
-    @media (max-width: $tabletSize_Big) {
-        font-size: 1.5625rem;
-    }
+  @media (max-width: $tabletSize_Big) {
+    font-size: 1.5625rem;
+  }
 
-    @media (max-width: 332px) {
-        font-size: 1.5rem;
-    }
+  @media (max-width: 332px) {
+    font-size: 1.5rem;
+  }
 }

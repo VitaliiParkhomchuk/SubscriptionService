@@ -1,11 +1,13 @@
 (function () {
-    function openBurgerMenu(item) {
-        item.classList.toggle('header__burger-button_active');
-        burgerMenu.classList.toggle('nav_burger-menu-active')
-    }
+  'use strict';
 
-    const burgerMenu = document.querySelector('.nav');
+  function openBurgerMenu(item) {
+    item.classList.toggle('header__burger-button_active');
+    burgerMenu.classList.toggle('nav_burger-menu-active')
+  }
 
-    window.openBurgerMenu = openBurgerMenu;
+  const burgerMenu = document.querySelector('.nav');
+
+  window.openBurgerMenu = openBurgerMenu;
 })();
 
