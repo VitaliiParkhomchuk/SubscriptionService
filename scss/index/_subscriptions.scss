@@ -28,6 +28,7 @@
       aspect-ratio: 35 / 10;
       background-color: #fff;
       border-radius: 32px;
+      box-shadow: 0 4px 24px rgba(213, 216, 221, 0.2);
 
       @media (max-width: 524px) {
         grid-template-columns: 1fr;
